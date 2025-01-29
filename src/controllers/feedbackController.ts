@@ -30,7 +30,6 @@ export const getFeedbacks = async (req: Request, res: Response) => {
       select: "-googleId",
 
     });
-    console.log(feedbacks);
     res.status(200).json({ feedbacks });
   } catch (e) {
     res.status(500).json({ message: "Internal server error" });

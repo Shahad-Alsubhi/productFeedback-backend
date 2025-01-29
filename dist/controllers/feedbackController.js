@@ -43,7 +43,6 @@ const getFeedbacks = (req, res) => __awaiter(void 0, void 0, void 0, function* (
             path: "comments.created_by",
             select: "-googleId",
         });
-        console.log(feedbacks);
         res.status(200).json({ feedbacks });
     }
     catch (e) {
